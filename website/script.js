@@ -9,16 +9,21 @@ document.querySelectorAll('.cap-card, .step, .stack-list div, .audience-card, .f
   el.classList.add('observe-in');
 });
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.08 });
+// Reveal-on-scroll is optional; never let it prevent the account controls from working.
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
 
-document.querySelectorAll('.observe-in').forEach(el => observer.observe(el));
+  document.querySelectorAll('.observe-in').forEach(el => observer.observe(el));
+} else {
+  document.querySelectorAll('.observe-in').forEach(el => el.classList.add('in-view'));
+}
 
 const backdrop = document.getElementById('modalBackdrop');
 const title = document.getElementById('modalTitle');

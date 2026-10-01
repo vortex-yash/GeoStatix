@@ -1,13 +1,13 @@
-GeoStatix Website v2
+GeoStatix Website v4
 
-Static portfolio/product website for GeoStatix.
+Static portfolio website for GeoStatix.
 
-Features:
-- Apple-inspired liquid-glass visual system
-- Responsive mobile layout
-- Live Streamlit app and GitHub links
-- Capabilities, audience, workflow, FAQ and About sections
-- Sign-in / registration UI prepared for future authentication integration
-- Feedback CTA
+Key updates in v4:
+- Liquid-glass visual design
+- Who it's for, FAQ, About and Feedback sections
+- Sign in / Create profile modal UI
+- Direct Streamlit links that work even if JavaScript is delayed or unavailable
+- Defensive IntersectionObserver handling so account controls are not blocked by reveal animations
 
-Deploy the contents of this folder as a static website or GitHub Pages artifact.
+Live app: https://geostatix.streamlit.app
+GitHub: https://github.com/vortex-yash/GeoStatix
