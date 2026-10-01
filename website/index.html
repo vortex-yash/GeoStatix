@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GeoStatix — Interactive Statistical & Geostatistical Analytics Platform for geological data." />
+  <title>GeoStatix — Geological Analytics, Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="GeoStatix home">
+      <span class="brand-mark">G</span>
+      <span>GeoStatix</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#stack">Technology</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="text-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a class="button button-small" href="#launch">Launch App</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> Statistical + Geostatistical Analytics</div>
+        <h1>Turn geological data into <span>spatial insight.</span></h1>
+        <p class="hero-text">GeoStatix is an interactive analytics platform for exploring geological datasets, distribution behavior, spatial continuity, interpolation and geostatistical uncertainty — without writing analysis code.</p>
+        <div class="hero-actions" id="launch">
+          <a class="button" href="#" data-app-link>Launch GeoStatix <span>↗</span></a>
+          <a class="button button-ghost" href="#capabilities">Explore capabilities <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <span>CSV / XLSX</span><i></i><span>Python</span><i></i><span>Streamlit</span><i></i><span>Geostatistics</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="dashboard-card">
+          <div class="dash-top"><span>GEOSTATIX / SPATIAL ANALYSIS</span><span class="live">LIVE</span></div>
+          <div class="dash-title">Gold Grade Distribution</div>
+          <div class="map-area">
+            <div class="grid-lines"></div>
+            <div class="contour c1"></div><div class="contour c2"></div><div class="contour c3"></div>
+            <span class="point p1"></span><span class="point p2"></span><span class="point p3"></span><span class="point p4"></span><span class="point p5"></span><span class="point p6"></span><span class="point p7"></span><span class="point p8"></span><span class="point p9"></span><span class="point p10"></span>
+            <div class="map-label label-a">HIGH</div><div class="map-label label-b">LOW</div>
+          </div>
+          <div class="dash-stats">
+            <div><small>MODEL</small><strong>Ordinary Kriging</strong></div>
+            <div><small>RMSE</small><strong>0.0613</strong></div>
+            <div><small>R²</small><strong>0.934</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip">
+      <div><strong>01</strong><span>Profile</span></div>
+      <div><strong>02</strong><span>Diagnose</span></div>
+      <div><strong>03</strong><span>Model</span></div>
+      <div><strong>04</strong><span>Interpolate</span></div>
+      <div><strong>05</strong><span>Validate</span></div>
+    </section>
+
+    <section class="section-shell section" id="capabilities">
+      <div class="section-heading">
+        <div><span class="kicker">CAPABILITIES</span><h2>From raw table to geological insight.</h2></div>
+        <p>One workflow for statistical exploration and spatial analysis, designed around the way geological data is actually investigated.</p>
+      </div>
+      <div class="cap-grid">
+        <article class="cap-card large">
+          <div class="cap-icon">Σ</div><span class="card-number">01</span>
+          <h3>Statistical diagnostics</h3>
+          <p>Profile variables, inspect data quality, explore distributions and quantify shape before modelling.</p>
+          <div class="mini-chart"><span style="height:28%"></span><span style="height:44%"></span><span style="height:70%"></span><span style="height:92%"></span><span style="height:68%"></span><span style="height:42%"></span><span style="height:25%"></span></div>
+          <div class="tag-row"><span>Skewness</span><span>Kurtosis</span><span>KS test</span><span>AIC</span></div>
+        </article>
+        <article class="cap-card">
+          <div class="cap-icon">∿</div><span class="card-number">02</span>
+          <h3>Distribution analysis</h3>
+          <p>Compare normal and lognormal fits with Q-Q plots, probability plots and fit diagnostics.</p>
+          <div class="sparkline"><svg viewBox="0 0 320 90" preserveAspectRatio="none"><path d="M0 82 C35 78 55 40 83 30 C112 20 125 61 155 62 C190 63 190 19 222 22 C255 25 255 62 320 12" fill="none" stroke="currentColor" stroke-width="3"/></svg></div>
+        </article>
+        <article class="cap-card">
+          <div class="cap-icon">⌖</div><span class="card-number">03</span>
+          <h3>Spatial intelligence</h3>
+          <p>Detect coordinates, inspect spatial quality and visualize values across sampled locations.</p>
+          <div class="coordinate-box"><span>X  483215.4</span><span>Y  2876410.8</span><span>VALUE  2.84 ppm</span></div>
+        </article>
+        <article class="cap-card wide">
+          <div class="cap-icon">≈</div><span class="card-number">04</span>
+          <h3>Variograms & interpolation</h3>
+          <p>Move from spatial continuity to prediction with experimental variograms, IDW and Ordinary Kriging — including uncertainty.</p>
+          <div class="method-row"><span>VARIOGRAM</span><span>IDW</span><span>ORDINARY KRIGING</span><span>UNCERTAINTY</span></div>
+        </article>
+        <article class="cap-card wide">
+          <div class="cap-icon">✓</div><span class="card-number">05</span>
+          <h3>Cross-validation</h3>
+          <p>Evaluate predictions with MAE, RMSE, mean error and R² alongside observed-versus-predicted diagnostics.</p>
+          <div class="metric-row"><div><small>MAE</small><strong>0.0488</strong></div><div><small>RMSE</small><strong>0.0613</strong></div><div><small>BIAS</small><strong>-0.0008</strong></div><div><small>R²</small><strong>0.9343</strong></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="dark-section" id="workflow">
+      <div class="section-shell section">
+        <div class="section-heading light">
+          <div><span class="kicker">WORKFLOW</span><h2>A geological analysis pipeline, made visual.</h2></div>
+          <p>Start with your own CSV/XLSX or use a built-in synthetic dataset. Every stage stays inspectable.</p>
+        </div>
+        <div class="workflow">
+          <div class="workflow-line"></div>
+          <div class="step"><span>01</span><div><h3>Load</h3><p>Upload CSV/XLSX or start with a built-in demo.</p></div></div>
+          <div class="step"><span>02</span><div><h3>Profile</h3><p>Rows, columns, types, missingness, duplicates and quality flags.</p></div></div>
+          <div class="step"><span>03</span><div><h3>Diagnose</h3><p>Distributions, relationships and statistical diagnostics.</p></div></div>
+          <div class="step"><span>04</span><div><h3>Model</h3><p>Variograms, interpolation and geostatistical prediction.</p></div></div>
+          <div class="step"><span>05</span><div><h3>Validate</h3><p>Quantify predictive performance and uncertainty.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section" id="stack">
+      <div class="tech-layout">
+        <div>
+          <span class="kicker">BUILT FOR ANALYSIS</span>
+          <h2>Serious analytics under a simple interface.</h2>
+          <p class="lead">GeoStatix combines a Python analytical core with an interactive Streamlit interface so the workflow stays transparent, reproducible and accessible.</p>
+        </div>
+        <div class="stack-list">
+          <div><span>LANGUAGE</span><strong>Python</strong><em>01</em></div>
+          <div><span>INTERFACE</span><strong>Streamlit</strong><em>02</em></div>
+          <div><span>ANALYTICS</span><strong>NumPy · Pandas · SciPy</strong><em>03</em></div>
+          <div><span>VISUALIZATION</span><strong>Plotly</strong><em>04</em></div>
+          <div><span>GEOSTATISTICS</span><strong>Variograms · IDW · Kriging</strong><em>05</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section-shell">
+      <div class="cta-inner">
+        <span class="kicker">READY TO EXPLORE?</span>
+        <h2>Bring a dataset.<br><span>Find its structure.</span></h2>
+        <p>Upload your geological data and move from raw values to spatial understanding.</p>
+        <a class="button" href="#" data-app-link>Launch GeoStatix <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div class="brand"><span class="brand-mark">G</span><span>GeoStatix</span></div>
+    <p>Interactive Statistical & Geostatistical Analytics Platform</p>
+    <span>Built for geological data.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
