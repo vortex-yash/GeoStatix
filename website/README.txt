@@ -1,18 +1,13 @@
-GEOSTATIX WEBSITE
-=================
+GeoStatix Website v2
 
-This is a standalone responsive landing page for the GeoStatix analytics platform.
+Static portfolio/product website for GeoStatix.
 
-Files:
-- index.html  -> page structure/content
-- styles.css  -> visual design/responsive layout
-- script.js   -> app/GitHub URL configuration + small interactions
+Features:
+- Apple-inspired liquid-glass visual system
+- Responsive mobile layout
+- Live Streamlit app and GitHub links
+- Capabilities, audience, workflow, FAQ and About sections
+- Sign-in / registration UI prepared for future authentication integration
+- Feedback CTA
 
-Before publishing:
-1. Open script.js.
-2. Replace CONFIG.appUrl with your deployed Streamlit GeoStatix URL.
-3. Replace CONFIG.githubUrl with your actual GitHub repository URL.
-4. Open index.html locally to preview, or deploy the folder to a static host.
-
-The website is intentionally separate from the main GeoStatix application so the
-analytics code is not affected by frontend changes.
+Deploy the contents of this folder as a static website or GitHub Pages artifact.
