@@ -3,7 +3,6 @@ const CONFIG = {
   appUrl: "https://geostatix.streamlit.app",
   githubUrl: "https://github.com/vortex-yash/GeoStatix"
 };
-
 document.querySelectorAll('[data-app-link]').forEach(link => {
   link.href = CONFIG.appUrl;
   link.addEventListener('click', event => {
