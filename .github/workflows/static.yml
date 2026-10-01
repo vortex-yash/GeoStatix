@@ -1,0 +1,49 @@
+# Deploy the GeoStatix website to GitHub Pages
+name: Deploy GeoStatix website to Pages
+
+on:
+  # Deploy whenever the website workflow changes on the main branch
+  push:
+    branches: ["main"]
+
+  # Allow manual deployment from the Actions tab
+  workflow_dispatch:
+
+# Permissions required for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one deployment at a time
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Download the repository
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Upload only the website folder
+      - name: Upload GeoStatix website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './website'
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
