@@ -1,7 +1,7 @@
 // Replace these two URLs before publishing.
 const CONFIG = {
-  appUrl: "#",
-  githubUrl: "https://github.com/"
+  appUrl: "https://geostatix.streamlit.app",
+  githubUrl: "https://github.com/vortex-yash/GeoStatix"
 };
 
 document.querySelectorAll('[data-app-link]').forEach(link => {
